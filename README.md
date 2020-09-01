@@ -189,7 +189,7 @@ $client->bulk([
 
 
 ## 搜索&分页&排序
-详细文档：[https://blog.csdn.net/afeiqiang/article/details/83047989](https://blog.csdn.net/afeiqiang/article/details/83047989)
+详细文档：[https://blog.csdn.net/qq_37248504/article/details/103774307](https://blog.csdn.net/qq_37248504/article/details/103774307)
 ```php
 $results = $client->search([
     'index' => 'bbs_article',

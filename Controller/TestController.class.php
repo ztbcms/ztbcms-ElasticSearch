@@ -15,7 +15,7 @@ class TestController extends Base
 {
 
     public function syncTable(){
-        ElasticSearchService::syncTable('user', [
+        $res = ElasticSearchService::syncTable('user', [
             'nickname' => [
                 'type' => 'text',
                 'analyzer' => 'standard'
@@ -24,6 +24,9 @@ class TestController extends Base
                 'type' => 'long'
             ]
         ]);
+        echo "<pre>";
+            print_r($res);
+        echo "</pre>";
     }
 
     public function syncTableId(){
